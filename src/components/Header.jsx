@@ -16,7 +16,7 @@ export default function Header() {
       <Sidebar isNavOpen={openNav} />
       {/* DESKTOP NAVBAR */}
       <nav className="hidden md:block">
-        <ul className="flex gap-4">
+        {/* <ul className="flex gap-4">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -29,6 +29,13 @@ export default function Header() {
           <li>
             <Link to="/support">Support</Link>
           </li>
+        </ul> */}
+
+        <ul className="flex gap-4">
+          <Link to="/">Home</Link>
+          <li>Product</li>
+          <li>Category</li>
+          <li>Support</li>
         </ul>
       </nav>
     </header>

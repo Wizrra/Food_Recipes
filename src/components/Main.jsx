@@ -23,7 +23,7 @@ export default function Main() {
       <p className="text-xl mb-4">Our Recipes</p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {recipes.map((r, i) => (
-          <FoodCard recipe={r} />
+          <FoodCard recipe={r} key={i}/>
         ))}
       </div>
     </main>

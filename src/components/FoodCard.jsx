@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function FoodCard({ recipe }) {
   return (
@@ -32,9 +33,9 @@ export default function FoodCard({ recipe }) {
           </p>
         </div>
 
-        <button className="text-white my-3 px-5 py-1 rounded-md bg-green-500">
+        <Link to={`/${recipe.id}`} className="text-white my-3 px-5 py-1 rounded-md bg-green-500">
           view
-        </button>
+        </Link>
       </div>
     </div>
   );
